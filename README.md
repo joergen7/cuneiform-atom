@@ -1,5 +1,7 @@
-# cuneiform-sublime
-Syntax highlighting for Cuneiform in Sublime Text 3
+# cuneiform-syntax-highlight
+Syntax highlighting for Cuneiform
+
+## Sublime Text 3
 
 Save the file `Cuneiform.sublime-syntax` in your home directory under
 
