@@ -16,7 +16,7 @@ Copy the folder `language-cuneiform` into your home directory under ~`/.atom/pac
 ## Authors
 
 - Jörgen Brandt ([@joergen7](https://github.com/joergen7/)) [joergen.brandt@onlinehome.de](mailto:joergen.brandt@onlinehome.de)
-- John Gardner ([Alhadis](https://github.com/Alhadis) [gardnerjohng@gmail.com](mailto:gardnerjohng@gmail.com)
+- John Gardner ([Alhadis](https://github.com/Alhadis)) [gardnerjohng@gmail.com](mailto:gardnerjohng@gmail.com)
 
 ## License
 
