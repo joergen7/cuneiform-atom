@@ -1,0 +1,94 @@
+name: "Cuneiform"
+fileTypes: ["cfl"]
+scopeName: "source.cfl"
+patterns: [include: "#main"]
+
+repository:
+	main:
+		patterns: [
+			{include: "#comments"}
+			{include: "#keywords"}
+			{include: "#types"}
+			{include: "#languages"}
+			{include: "#id"}
+			{include: "#body"}
+			{include: "#numbers"}
+			{include: "#strings"}
+			{include: "#files"}
+			{include: "#booleans"}
+			{include: "#assignments"}
+			{include: "#operators"}
+		]
+
+	assignments:
+		name:  "keyword.operator.assignment.cfl"
+		match: "[\\:=]|<-|->"
+
+	body:
+		name: "string.quoted.triple.cfl"
+		begin: "\\*{"
+		end:   "}\\*"
+		beginCaptures:
+			0: name: "punctuation.definition.string.begin.cfl"
+		endCaptures:
+			0: name: "punctuation.definition.string.end.cfl"
+		patterns: [include: "#escape"]
+
+	booleans:
+		name:  "constant.language.boolean.$1.cfl"
+		match: "\\b(true|false)\\b"
+
+	comments:
+		name:  "comment.line.percentage.cfl"
+		match: "[#%]"
+		end:   "$\\n?"
+		beginCaptures:
+			0: name: "punctuation.definition.comment.cfl"
+
+	escape:
+		name: "constant.character.escape.cfl"
+		match: "\\."
+
+	files:
+		name: "string.quoted.single.cfl"
+		begin: "'"
+		end:   "'"
+		beginCaptures:
+			0: name: "punctuation.definition.string.begin.cfl"
+		endCaptures:
+			0: name: "punctuation.definition.string.end.cfl"
+		patterns: [include: "#escape"]
+
+	id:
+		name: "variable.language.cfl"
+		match: "[A-Za-z][A-Za-z0-9\\.\\-_]*"
+
+	keywords:
+		name: "keyword.control.cfl"
+		match: "\\b(def|do|else|end|error|fold|for|if|import|in|let|then)\\b"
+
+	languages:
+		name: "entity.name.label.cfl"
+		match: "\\b(Bash|Erlang|Java|Matlab|Octave|Perl|Python|R|Racket)\\b"
+
+	numbers:
+		name: "constant.numeric.cfl"
+		match: "\\b-?([0-9]|[1-9][0-9]*)\\b"
+
+	operators:
+		name:  "keyword.operator.logical.cfl"
+		match: "and|or|not|isnil|\\+|=="
+
+	strings:
+		name: "string.quoted.double.cfl"
+		begin: '"'
+		end:   '"'
+		beginCaptures:
+			0: name: "punctuation.definition.string.begin.cfl"
+		endCaptures:
+			0: name: "punctuation.definition.string.end.cfl"
+		patterns: [include: "#escape"]
+
+	types:
+		name: "entity.name.type.cfl"
+		match: "Str|Bool|File|Ntv|Frn"
