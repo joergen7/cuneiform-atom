@@ -3,6 +3,12 @@ Syntax highlighting for Cuneiform
 
 ## Sublime Text 3
 
-Save the file `Cuneiform.sublime-syntax` in your home directory under
+Copy the file `Cuneiform.sublime-syntax` into your home directory under
 
-    ~/.config/sublime-text-3/Packages/User
+    cp Cuneiform.sublime-syntax ~/.config/sublime-text-3/Packages/User
+
+## Atom
+
+Copy the folder `language-cuneiform` into your home directory under
+
+    cp -r language-cuneiform ~/.atom/packages
