@@ -69,7 +69,7 @@ repository:
 
 	languages:
 		name: "entity.name.label.cfl"
-		match: "\\b(Bash|Erlang|Java|Matlab|Octave|Perl|Python|R|Racket)\\b"
+		match: "\\b(Awk|Bash|Erlang|Java|Matlab|Octave|Perl|Python|R|Racket)\\b"
 
 	numbers:
 		name: "constant.numeric.cfl"

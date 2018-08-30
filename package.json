@@ -1,12 +1,12 @@
 {
-	"name": "cuneiform-syntax-highlight",
+	"name": "cuneiform-atom",
 	"version": "0.0.0",
 	"description": "Syntax highlighting for Cuneiform in Atom.",
 	"keywords": [
 		"cuneiform",
 		"syntax-highlighting"
 	],
-	"repository": "https://github.com/joergen7/cuneiform-syntax-highlight",
+	"repository": "https://github.com/joergen7/cuneiform-atom",
 	"author": "Jörgen Brandt <joergen.brandt@onlinehome.de>",
 	"license": "Apache-2.0",
 	"engines": {

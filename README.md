@@ -1,20 +1,12 @@
-# cuneiform-syntax-highlight
+# cuneiform-atom
 Syntax highlighting for Cuneiform
 
-## Sublime Text 3
 
-Copy the file `Cuneiform.sublime-syntax` into your home directory under `~/.config/sublime-text-3/Packages/User`
-
-    cp Cuneiform.sublime-syntax ~/.config/sublime-text-3/Packages/User
-
-
-## Atom
-
-Open **Settings** → **Install** and search for `cuneiform-syntax-highlight`.
+Open **Settings** → **Install** and search for `cuneiform-atom`.
 
 Alternatively, install through command-line:
 
-    apm install cuneiform-syntax-highlight
+    apm install cuneiform-atom
 
 
 ## Authors
