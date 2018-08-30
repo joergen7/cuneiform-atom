@@ -1,5 +1,5 @@
 # cuneiform-atom
-Syntax highlighting for Cuneiform
+Syntax highlighting for Cuneiform in Atom
 
 
 Open **Settings** → **Install** and search for `cuneiform-atom`.
