@@ -1,10 +1,17 @@
 # cuneiform-atom
-Syntax highlighting for Cuneiform in Atom
+###### Syntax highlighting for Cuneiform in Atom
 
+![Screenshot_2018-08-30_12-52-17.png](Screenshot_2018-08-30_12-52-17.png)
 
-Open **Settings** → **Install** and search for `cuneiform-atom`.
+## Installation
 
-Alternatively, install through command-line:
+### Atom Menu
+
+In the main menu open **Edit** - **Preferences** which opens the Settings window. Now open the tab **Install** and search for the package `cuneiform-atom`.
+
+### Command line
+
+Alternatively, install through command line:
 
     apm install cuneiform-atom
 
